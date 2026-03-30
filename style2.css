@@ -1,0 +1,658 @@
+:root {
+    --maroon: #a2113a;
+    --black: #130f40;
+    --light_color: #666;
+    --box-shadow: 0 .2rem 1rem rgb(36, 33, 33);
+    --border: 2rem solid rgb(128, 0, 0);
+    --outline: .1rem solid rgb(128, 0, 0);
+}
+
+body {
+    background: #eee;
+    background-color: whitesmoke;
+    /* text-align: center; */
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-decoration-color: aliceblue;
+    font-size: medium;
+}
+
+#name {
+    font-family: "Moon Dance", cursive;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 6rem;
+    text-align: left;
+}
+
+.header {
+    font-size: larger;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    height: 80px;
+    align-items: center;
+    background-color: #a2113a;
+    color: white;
+    margin: 0px;
+    padding: 0.5rem 9%;
+    box-sizing: border-box;
+    outline: none;
+    border: 0px solid;
+    transition: all .2s linear;
+    /* text-align: center; */
+    justify-content: space-between;
+    box-shadow: var(--box-shadow);
+}
+
+.header .navbar a {
+    font-family: "Moon Dance", cursive;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 5rem;
+    text-decoration: none;
+    font-size: 5.5rem;
+    margin: 0 1rem;
+    color: whitesmoke;
+}
+
+.header .navbar a:hover {
+    color: grey;
+}
+
+footer {
+    background-color: var(--maroon);
+    color: white;
+    padding: 2px;
+    text-align: center;
+    font-family: "Moon Dance", cursive;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 3rem;
+
+}
+
+footer a {
+    text-decoration: none;
+    color: rgb(161, 157, 157);
+}
+
+footer a:hover {
+    color: black;
+}
+
+main {
+    padding: 10px;
+}
+
+form {
+    border-radius: 5px;
+    background-color: whitesmoke;
+    padding: 20px;
+}
+
+.form-text {
+    font-family: "Moon Dance", cursive;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 3rem;
+    color: #3e3d3deb;
+}
+
+label {
+    display: block;
+}
+
+input[type=text],
+select {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: var(--maroon);
+    color: white;
+    padding: 14px;
+    margin: 8px 0;
+    border-radius: 3px;
+}
+
+input[type=submit]:hover {
+    background-color: black;
+}
+
+div.scroll-container {
+    background-color: #a2113a;
+    overflow: auto;
+    white-space: nowrap;
+    padding: 10px;
+}
+
+div.scroll-container img {
+    padding: 1px;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 7rem;
+}
+
+/* css code for banner */
+section {
+    padding: 2rem 9%;
+
+}
+
+.home {
+    display: flex;
+    justify-content: center;
+    background: url('ImagesA2/b1.jpg') no-repeat;
+    background-position: center;
+    background-size: cover;
+    image-rendering: high-quality;
+    filter: contrast(110%) brightness(90%);
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    padding-top: 17rem;
+    padding-bottom: 2rem;
+}
+
+.home .content {
+    text-align: center;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.603);
+    padding: 40px;
+    max-width: 2090px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    font-family: "Moon Dance", cursive;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 3rem;
+    color: #1a1a1aeb;
+    margin-bottom: 20px
+}
+
+.home .content h3 {
+    font-size: 5rem;
+}
+
+.home .content span {
+    color: maroon;
+}
+
+.bodytext {
+    /* border: 1px solid #333333d5; */
+    padding: 5px;
+    margin: 50px;
+    text-align: justify;
+    font-family: "Moon Dance", cursive;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 3rem;
+    color: #3e3d3deb;
+}
+
+#line {
+    font-family: "Moon Dance", cursive;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 3rem;
+    color: #3e3d3deb;
+    text-align: center;
+}
+
+.heading {
+    text-align: center;
+    /* padding: 2rem 0; */
+    /* padding-bottom: 1rem; */
+    font-family: "Moon Dance", cursive;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 4rem;
+    color: #3e3d3d;
+    background: var(--maroon);
+    color: #fff;
+    display: inline-block;
+    padding: 0.5rem 40%;
+    clip-path: polygon(100% 0, 93% 50%, 100% 99%, 0% 100%, 7% 50%, 0% 0%);
+}
+
+#line {
+    padding-top: 0%;
+    margin: 0%;
+}
+
+
+.product-slider {
+    border: 1px solid var(--maroon);
+    margin: 50px;
+    padding: 2rem;
+    overflow-x: auto;
+    scrollbar-width: thin;
+    scrollbar-color: var(--maroon) transparent;
+}
+
+.product-slider .wrapper {
+    display: flex;
+    gap: 2rem;
+    width: max-content;
+}
+
+
+.product-slider .box {
+    flex: 0 0 350px;
+    background: #fff;
+    border-radius: 2rem;
+    text-align: center;
+    padding: 2rem;
+    outline: var(--outline);
+    box-shadow: var(--box-shadow);
+    transition: transform .2s linear;
+}
+
+.product-slider .box:hover {
+    transform: translateY(-5px);
+    box-shadow: 1px 1px 10px 4px var(--maroon);
+}
+
+.product-slider .box img {
+    width: 100%;
+    height: 30rem;
+    object-fit: cover;
+    border-radius: 1rem;
+}
+
+
+.product-slider::-webkit-scrollbar {
+    height: 8px;
+}
+
+.product-slider::-webkit-scrollbar-thumb {
+    background: var(--maroon);
+    border-radius: 10px;
+}
+
+
+.product-slider:first-child {
+    margin-bottom: 2rem;
+}
+
+.product-slider .box {
+    border: 1px solid black;
+    background: #fff;
+    border-radius: 5rem;
+    text-align: center;
+    padding: 3rem 2rem;
+    outline-offset: -1rem;
+    outline: var(--outline);
+    box-shadow: var(--box-shadow);
+    transition: .2s linear;
+}
+
+.product-slider h1 {
+    font-family: "Moon Dance", cursive;
+    font-weight: 400;
+    font-style: bold;
+    font-size: 4rem;
+    color: #3e3d3d;
+}
+
+.product-slider .box:hover {
+    box-shadow: 1px 1px 10px 4px var(--maroon);
+}
+
+.product-slider .box img {
+    height: 40rem;
+}
+
+
+.recipe-hero {
+    position: relative;
+    height: 60vh;
+    width: 82%;
+    background: url('ImagesA2/baked-avocado-eggscover.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 3rem;
+}
+
+
+.hero-overlay {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    padding: 4rem 6rem;
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    text-align: center;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    max-width: 80%;
+}
+
+.hero-title {
+    font-family: "Moon Dance", cursive;
+    font-size: 8rem;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin: 0;
+}
+
+.hero-subtitle {
+    font-family: 'Lucida Sans', sans-serif;
+    font-size: 2rem;
+    color: white;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-top: 1rem;
+}
+
+
+.recipe-container {
+    margin-top: -5rem;
+    position: relative;
+    z-index: 10;
+}
+
+.recipe-container {
+    max-width: 1000px;
+    margin: 4rem auto;
+    padding: 2rem;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: var(--box-shadow);
+}
+
+.recipe-grid {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 50px;
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 0 20px;
+    font-size: 1.8rem;
+    color: #333;
+}
+
+.stats-box {
+    grid-column: 1 / -1;
+    display: flex;
+    justify-content: space-around;
+    background: #f9f9f9;
+    padding: 2rem;
+    border-left: 5px solid var(--maroon);
+    font-family: "Moon Dance", cursive;
+    font-size: 2.5rem;
+}
+
+.recipe-section h3 {
+    font-family: "Moon Dance", cursive;
+    color: var(--maroon);
+    font-size: 3.5rem;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 1rem;
+}
+
+.recipe-section ul,
+.recipe-section ol {
+    padding-left: 2rem;
+    line-height: 1.6;
+}
+
+.notes {
+    background: #fff5f7;
+    padding: 2rem;
+    border-radius: 5px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown .dropbtn {
+    color: white;
+    padding: 0 1.5rem;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    min-width: 220px;
+    box-shadow: var(--box-shadow);
+    z-index: 1000;
+    border-radius: 0.5rem;
+    top: 100%;
+}
+
+.dropdown-content a {
+    font-size: 0.9rem;
+    padding: 10px 15px;
+    text-transform: none;
+    display: block;
+    height: fit-content;
+    width: fit-content;
+    transition: 0.2s ease;
+    color: var(--black);
+    text-decoration: none;
+    border-bottom: 1px solid #eee;
+    letter-spacing: 0.05rem;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+    color: var(--maroon) !important;
+    padding-left: 20px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.product-slider .box a {
+    display: block;
+    cursor: pointer;
+}
+
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    min-width: 200px;
+    box-shadow: var(--box-shadow);
+    z-index: 1000;
+    top: 100%;
+    border-radius: 0 0 0.5rem 0.5rem;
+    overflow: hidden;
+}
+
+.dropdown-content a {
+    color: var(--black) !important;
+    padding: 1.2rem 1.6rem;
+    text-decoration: none;
+    display: block;
+    font-size: 1.4rem;
+    border-bottom: 0.1rem solid #eee;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #f8f8f8;
+    color: var(--maroon);
+    padding-left: 2rem;
+    transition: all 0.3s ease;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+/* Media Queries */
+@media (max-width: 900px) {
+    .recipe-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .stats-box {
+        display: flex;
+        justify-content: space-around;
+        background: #f4f4f4;
+        padding: 15px;
+        border-radius: 8px;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .hero-title {
+        font-size: 1.8rem;
+    }
+
+    .recipe-section ul,
+    .recipe-section ol {
+        padding-left: 20px;
+        font-size: 0.95rem;
+    }
+
+    .navbar {
+        display: flex;
+        align-items: center;
+    }
+}
+
+@media (max-width: 768px) {
+    html {
+        font-size: 40%;
+    }
+
+    .heading {
+        font-size: 40%;
+        text-align: center;
+    }
+
+    .header {
+        text-align: justify;
+    }
+
+    section {
+        padding: 2rem 9%;
+
+    }
+
+    .recipe-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .header {
+        height: auto;
+        padding: 1rem 2rem;
+    }
+
+    .navbar {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .dropdown-content {
+        display: none;
+        width: 100%;
+        box-shadow: none;
+        background-color: rgba(255, 255, 255, 0.1);
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    .dropdown-content a {
+        color: white;
+        text-align: center;
+        font-size: 1.8rem;
+    }
+}
+
+
+@media (max-width: 991px) {
+    html {
+        font-size: 55%;
+    }
+
+    #features {
+        text-align: center;
+    }
+
+    .heading {
+        font-size: 50%;
+        text-align: center;
+    }
+
+    .header {
+        padding: 0.5rem;
+    }
+
+    section {
+        padding: 2rem 9%;
+
+    }
+}
+
+
+@media (max-width: 520px) {
+    html {
+        font-size: 30%;
+    }
+
+    .heading {
+        font-size: 30%;
+        text-align: center;
+    }
+
+    section {
+        padding: 2rem 9%;
+
+    }
+}
+
+@media (max-width: 450px) {
+    html {
+        font-size: 22%;
+    }
+
+    .heading {
+        font-size: 22%;
+        text-align: center;
+    }
+
+    .header {
+        height: 40px;
+    }
+
+    section {
+        padding: 2rem 9%;
+
+    }
+}
